@@ -2,7 +2,7 @@
 <head>
     <title>Electronics Calculator</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="css/estilo.css" type="text/css">
+	<!-- link rel="stylesheet" href="css/estilo.css" type="text/css" -->
 	<link rel="stylesheet" href="css/jQueryMobile.css" type="text/css">
 	<script src="js/jQuery.js"></script>
 	<script src="js/jQueryMobile.js"></script>
@@ -109,21 +109,21 @@ jQuery(document).ready(function() {
             </tr>
             <tr>
                 <td>\(U\)</td>
-                <td><input id="u" name="u" tabindex="1" value="5"/></td>
+                <td ><input id="u" name="u" tabindex="1" value="5" data-role="fieldcontain" /></td>
                 <td>V</td>
-                <td><input type="radio" name="calculate-for" value="u"/></td>
+                <td><label><input type="radio" name="calculate-for" value="u"/></label></td>
             </tr>
             <tr>
                 <td>\(R\)</td>
                 <td><input id="r" name="r" tabindex="2"/></td>
                 <td>&Omega;</td>
-                <td><input type="radio" name="calculate-for" value="r" checked=""/></td>
+                <td><label><input type="radio" name="calculate-for" value="r" checked=""/></label></td>
             </tr>
             <tr>
                 <td>\(I\)</td>
                 <td><input id="i" name="i" tabindex="3" value="10m"/></td>
                 <td>A</td>
-                <td><input type="radio" name="calculate-for" value="i"/></td>
+                <td><label><input type="radio" name="calculate-for" value="i"/></label></td>
             </tr>
             <tr>
                 <td colspan="4">
